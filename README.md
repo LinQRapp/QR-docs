@@ -35,5 +35,33 @@ All request for QR Code generation should be made as GET requests.
 |ec_level|`char`|`M`|{`L`, `M`, `Q`, `H`}|Error correction level for generated QR. Allows to restore some encoded data if it is partially unreadable. Literals correspond to amount of data which can be restored:<ul><li>`L`: approx. 7%</li><li>`M`: approx. 15%</li><li>`Q`: approx. 25%</li><li>`H`: approx. 30%</li></ul>Higher correction level causes in bigger resulting QR. **If image is embedded in QR, `H` correction level is choosen automatically.** For more information please refer to: [QRcode.com](https://www.qrcode.com/en/about/error_correction.html)|
 |quiet_zone|`int`|4|<0;4>|Default size of margin with background color around generated QR Code. This length is expressed as number of modules of Code. Recommended value is 4, but most readers allow you to read the code with smaller or zero margin. For more information please refer to: [QRcode.com](https://www.qrcode.com/en/howto/code.html).|
 
+## Styles' list
+
+|Name|Style example|
+|----|-------------|
+|`default`|![Style: default](img/styles/default.png)
+|`arrow`|![Style: arrow](img/styles/arrow.png)
+|`circle`|![Style: circle](img/styles/circle.png)
+|`classic`|![Style: classic](img/styles/classic.png)
+|`heavyround`|![Style: heavyround](img/styles/heavyround.png)
+|`lightround`|![Style: lightround](img/styles/lightround.png)
+|`sieve`|![Style: sieve](img/styles/sieve.png)
+
+## Eyes styles' list
+|Name|Inner eye|Outer eye|
+|----|---------|---------|
+|`default`|![Style: default](img/eyes/default_inner.png)|![Style: default](img/eyes/default_outer.png)
+|`circle`|![Style: circle](img/eyes/circle_inner.png)|![Style: circle](img/eyes/circle_outer.png)
+|`cushion`|![Style: cushion](img/eyes/cushion_inner.png)|![Style: cushion](img/eyes/cushion_outer.png)
+|`diamond`|![Style: diamond](img/eyes/diamond_inner.png)|![Style: diamond](img/eyes/diamond_outer.png)
+|`dots`|![Style: dots](img/eyes/dots_inner.png)|![Style: dots](img/eyes/dots_outer.png)
+|`heavyround`|![Style: heavyround](img/eyes/heavyround_inner.png)|![Style: heavyround](img/eyes/heavyround_outer.png)
+|`leaf`|![Style: leaf](img/eyes/leaf_inner.png)|![Style: leaf](img/eyes/leaf_outer.png)
+|`left_eye`|![Style: left_eye](img/eyes/left_eye_inner.png)|![Style: left_eye](img/eyes/left_eye_outer.png)
+|`right_eye`|![Style: right_eye](img/eyes/right_eye_inner.png)|![Style: right_eye](img/eyes/right_eye_outer.png)
+|`shield`|![Style: shield](img/eyes/shield_inner.png)|![Style: shield](img/eyes/shield_outer.png)
+|`sieve`|![Style: sieve](img/eyes/sieve_inner.png)|![Style: sieve](img/eyes/sieve_outer.png)
+|`star`|![Style: star](img/eyes/star_inner.png)|![Style: star](img/eyes/star_outer.png)
+
 
 **Acknowledgement:** The word *QR Code* is registered trademark of [DENSO WAVE INCORPORATED](http://www.denso-wave.com/en/en/) in Japan and other countries.
