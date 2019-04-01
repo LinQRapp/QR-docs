@@ -1,8 +1,17 @@
 # QR Code API
 
-All request for QR Code generation should be made as GET requests.
+This document describes methods, parameters and usage of Fast QR Code Generator API
 
-## GET method parameters
+## Table of Contents
+1. [Table of Contents](#Table-of-Contents)
+2. [API parameters](#API-parameters)
+    1. [Basic parameters](#Basic-parameters)
+    2. [Appearance parameters](#Appearance-parameters)
+    3. [QR Code specific parameters](#QR-Code-specific-parameters)
+3. [Styles' list](#Styles'-list)
+4. [Eyes-styles' list](#Eyes-styles'-list)
+
+## API parameters
 
 ### Basic parameters
 |Parameter|Type|Default value|Accepted values|Description|
