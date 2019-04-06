@@ -21,17 +21,17 @@ This API offers three similar workflows for QR Code generation. All of those dif
 ### Simple QR Code generation
 The basic scheme of usage is based on `/generateQR` API endpoint. All parameters listed below are available. For `image` parameter expected value is (encoded) URL of image which should be embedded in QR Code. Endpoint is accesible via HTTP GET method. Only valid URLs pointing to `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![Simple QR Code generation](schemes/generate.svg)
+![Simple QR Code generation](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/generate.svg)
 
 ### QR Code generation with image upload
 If custom image should be placed on QR and it is not accesible via external URL, it can be uploaded in the same POST request to `/generateQRwithLogo` endpoint. As far as big overhead is caused by usage of multipart method, it is not recommended to use this method for multiple codes generation with the same image, but it is the best solution for single QR generation with custom image. All parameters listed in the tables below are also available. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![QR Code generation with image upload](schemes/image+generate.svg)
+![QR Code generation with image upload](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/image+generate.svg)
 
 ### QR Code generation with separately uploaded image
 If custom image will be used for batch generation of QRs, this image can be previously uploaded via `/uploadLogo` endpoint. Every uploaded image will be available for 24 hours after last request involving this image. `/uploadLogo` endpoint responses with filename which can be used for future request to `/generateQR` endpoint with this filename specifed as value of `image` parameter. This workflow is recommended for batch generation of QRs or dynamic generation as it guarantees lowest possible response time and data overhead. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![QR Code generation with separately uploaded image](schemes/upload+generate.svg)
+![QR Code generation with separately uploaded image](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/upload+generate.svg)
 
 ## API parameters
 
@@ -68,31 +68,31 @@ If custom image will be used for batch generation of QRs, this image can be prev
 
 ## Styles' list
 
-| Name         | Style example                                   |
-| ------------ | ----------------------------------------------- |
-| `default`    | ![Style: default](img/styles/default.png)       |
-| `arrow`      | ![Style: arrow](img/styles/arrow.png)           |
-| `circle`     | ![Style: circle](img/styles/circle.png)         |
-| `classic`    | ![Style: classic](img/styles/classic.png)       |
-| `heavyround` | ![Style: heavyround](img/styles/heavyround.png) |
-| `lightround` | ![Style: lightround](img/styles/lightround.png) |
-| `sieve`      | ![Style: sieve](img/styles/sieve.png)           |
+| Name         | Style example                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------------- |
+| `default`    | ![Style: default](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/default.png)       |
+| `arrow`      | ![Style: arrow](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/arrow.png)           |
+| `circle`     | ![Style: circle](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/circle.png)         |
+| `classic`    | ![Style: classic](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/classic.png)       |
+| `heavyround` | ![Style: heavyround](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/heavyround.png) |
+| `lightround` | ![Style: lightround](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/lightround.png) |
+| `sieve`      | ![Style: sieve](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/styles/sieve.png)           |
 
 ## Eyes styles' list
-| Name         | Inner eye                                           | Outer eye                                           |
-| ------------ | --------------------------------------------------- | --------------------------------------------------- |
-| `default`    | ![Style: default](img/eyes/default_inner.png)       | ![Style: default](img/eyes/default_outer.png)       |
-| `circle`     | ![Style: circle](img/eyes/circle_inner.png)         | ![Style: circle](img/eyes/circle_outer.png)         |
-| `cushion`    | ![Style: cushion](img/eyes/cushion_inner.png)       | ![Style: cushion](img/eyes/cushion_outer.png)       |
-| `diamond`    | ![Style: diamond](img/eyes/diamond_inner.png)       | ![Style: diamond](img/eyes/diamond_outer.png)       |
-| `dots`       | ![Style: dots](img/eyes/dots_inner.png)             | ![Style: dots](img/eyes/dots_outer.png)             |
-| `heavyround` | ![Style: heavyround](img/eyes/heavyround_inner.png) | ![Style: heavyround](img/eyes/heavyround_outer.png) |
-| `leaf`       | ![Style: leaf](img/eyes/leaf_inner.png)             | ![Style: leaf](img/eyes/leaf_outer.png)             |
-| `left_eye`   | ![Style: left_eye](img/eyes/left_eye_inner.png)     | ![Style: left_eye](img/eyes/left_eye_outer.png)     |
-| `right_eye`  | ![Style: right_eye](img/eyes/right_eye_inner.png)   | ![Style: right_eye](img/eyes/right_eye_outer.png)   |
-| `shield`     | ![Style: shield](img/eyes/shield_inner.png)         | ![Style: shield](img/eyes/shield_outer.png)         |
-| `sieve`      | ![Style: sieve](img/eyes/sieve_inner.png)           | ![Style: sieve](img/eyes/sieve_outer.png)           |
-| `star`       | ![Style: star](img/eyes/star_inner.png)             | ![Style: star](img/eyes/star_outer.png)             |
+| Name         | Inner eye                                                                                                    | Outer eye                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `default`    | ![Style: default](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/default_inner.png)       | ![Style: default](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/default_outer.png)       |
+| `circle`     | ![Style: circle](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/circle_inner.png)         | ![Style: circle](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/circle_outer.png)         |
+| `cushion`    | ![Style: cushion](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/cushion_inner.png)       | ![Style: cushion](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/cushion_outer.png)       |
+| `diamond`    | ![Style: diamond](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/diamond_inner.png)       | ![Style: diamond](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/diamond_outer.png)       |
+| `dots`       | ![Style: dots](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/dots_inner.png)             | ![Style: dots](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/dots_outer.png)             |
+| `heavyround` | ![Style: heavyround](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/heavyround_inner.png) | ![Style: heavyround](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/heavyround_outer.png) |
+| `leaf`       | ![Style: leaf](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/leaf_inner.png)             | ![Style: leaf](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/leaf_outer.png)             |
+| `left_eye`   | ![Style: left_eye](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/left_eye_inner.png)     | ![Style: left_eye](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/left_eye_outer.png)     |
+| `right_eye`  | ![Style: right_eye](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/right_eye_inner.png)   | ![Style: right_eye](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/right_eye_outer.png)   |
+| `shield`     | ![Style: shield](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/shield_inner.png)         | ![Style: shield](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/shield_outer.png)         |
+| `sieve`      | ![Style: sieve](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/sieve_inner.png)           | ![Style: sieve](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/sieve_outer.png)           |
+| `star`       | ![Style: star](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/star_inner.png)             | ![Style: star](https://raw.githubusercontent.com/kubasaw/QR-docs/master/img/eyes/star_outer.png)             |
 
 
 **Acknowledgement:** The word *QR Code* is registered trademark of [DENSO WAVE INCORPORATED](http://www.denso-wave.com/en/en/) in Japan and other countries.
