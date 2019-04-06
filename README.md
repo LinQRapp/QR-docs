@@ -3,7 +3,10 @@
 This document describes methods, parameters and usage of Fast QR Code Generator API
 
 ## Table of Contents <!-- omit in toc -->
-- [API methods](#api-methods)
+- [API usage methods](#api-usage-methods)
+  - [Simple QR Code generation](#simple-qr-code-generation)
+  - [QR Code generation with image upload](#qr-code-generation-with-image-upload)
+  - [QR Code generation with separately uploaded image](#qr-code-generation-with-separately-uploaded-image)
 - [API parameters](#api-parameters)
   - [Basic parameters](#basic-parameters)
   - [Appearance parameters](#appearance-parameters)
@@ -11,7 +14,15 @@ This document describes methods, parameters and usage of Fast QR Code Generator 
 - [Styles' list](#styles-list)
 - [Eyes styles' list](#eyes-styles-list)
 
-## API methods
+## API usage methods
+
+### Simple QR Code generation
+![Simple QR Code generation](schemes/generate.svg)
+
+### QR Code generation with image upload
+![QR Code generation with image upload](schemes/image+generate.svg)
+### QR Code generation with separately uploaded image
+![QR Code generation with separately uploaded image](schemes/upload+generate.svg)
 
 ## API parameters
 
@@ -36,7 +47,7 @@ This document describes methods, parameters and usage of Fast QR Code Generator 
 | <a name="fill_style">fill_style</a>                   | `string`           | `solid`       | {`solid`, `linearGradient`, `radialGradient`}  | Type of whole QR Code fill style. If gradient-style fill is requested, fill color of modules changes fluently from [style_color](#style_color) to [gradient_stop_color](#gradient_stop_color). In case of `linearGradient` color changes along straight line and in case of `radialGradient` color changes along radius from center of QR. If [outer_eye_color](#outer_eye_color) or [inner_eye_color](#inner_eye_color) parameter are specified, they override gradient behaviour on according outer or inner eyes. |
 | <a name="gradient_stop_color">gradient_stop_color</a> | `string`           | `#000000`     | <`#000000`; `#FFFFFF`>                         | Second (stop) color of gradient style fill (see parameter: [fill_style](#fill_style))                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | gradient_angle                                        | (`float`\|`int`)   | 0             | <0;360)                                        | Angle (in degrees) of linear gradient rotation measured clockwise. By default, horizontal gradient is applied. To reverse color direction use value of 180. Vertical gradients are indicated by values of 90 and 180 etc.                                                                                                                                                                                                                                                                                            |
-| image                                                 | (`string`\|`file`) | `None`        | **see below**                                  | Image file to be embedded into QR code                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| image                                                 | (`string`\|`file`) | `None`        | see [API Usage Methods](#api-usage-methods)    | Image file to be embedded into QR code                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | remove_background                                     | `boolean`          | `false`       | {`true`,`false`}                               |
 
 ### QR Code specific parameters
