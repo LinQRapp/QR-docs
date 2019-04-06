@@ -21,17 +21,17 @@ This API offers three similar workflows for QR Code generation. All of those dif
 ### Simple QR Code generation
 The basic scheme of usage is based on `/generateQR` API endpoint. All parameters listed below are available. For `image` parameter expected value is (encoded) URL of image which should be embedded in QR Code. Endpoint is accesible via HTTP GET method. Only valid URLs pointing to `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![Simple QR Code generation](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/generate.svg)
+![Simple QR Code generation](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/generate.svg?sanitize=true)
 
 ### QR Code generation with image upload
 If custom image should be placed on QR and it is not accesible via external URL, it can be uploaded in the same POST request to `/generateQRwithLogo` endpoint. As far as big overhead is caused by usage of multipart method, it is not recommended to use this method for multiple codes generation with the same image, but it is the best solution for single QR generation with custom image. All parameters listed in the tables below are also available. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![QR Code generation with image upload](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/image+generate.svg)
+![QR Code generation with image upload](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/image+generate.svg?sanitize=true)
 
 ### QR Code generation with separately uploaded image
 If custom image will be used for batch generation of QRs, this image can be previously uploaded via `/uploadLogo` endpoint. Every uploaded image will be available for 24 hours after last request involving this image. `/uploadLogo` endpoint responses with filename which can be used for future request to `/generateQR` endpoint with this filename specifed as value of `image` parameter. This workflow is recommended for batch generation of QRs or dynamic generation as it guarantees lowest possible response time and data overhead. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
-![QR Code generation with separately uploaded image](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/upload+generate.svg)
+![QR Code generation with separately uploaded image](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/upload+generate.svg?sanitize=true)
 
 ## API parameters
 
