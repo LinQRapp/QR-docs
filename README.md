@@ -24,7 +24,7 @@ The basic scheme of usage is based on `/generateQR` API endpoint. All parameters
 ![Simple QR Code generation](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/generate.svg?sanitize=true)
 
 ### QR Code generation with image upload
-If custom image should be placed on the QR and it is not accesible via external URL, POST multipart request to `/generateQR` endpoint can be used. As far as big overhead is caused by usage of multipart method, it is not recommended to use this method for multiple codes generation with the same image, but it is the best solution for single QR generation with custom image. All parameters listed in the tables below are also available. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
+If custom image should be placed on the QR and it is not accesible via external URL, POST multipart request to `/generateQRwithLogo` endpoint can be used. As far as big overhead is caused by usage of multipart method, it is not recommended to use this method for multiple codes generation with the same image, but it is the best solution for single QR generation with custom image. All parameters listed in the tables below are also available. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files are allowed.
 
 ![QR Code generation with image upload](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/image+generate.svg?sanitize=true)
 
