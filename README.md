@@ -29,7 +29,7 @@ If custom image should be placed on the QR and it is not accesible via external 
 ![QR Code generation with image upload](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/image+generate.svg?sanitize=true)
 
 ### QR Code generation with separately uploaded image
-If custom image will be used for batch generation of QRs, this image can be previously uploaded via `/uploadLogo` endpoint. Every uploaded image will be available for 24 hours after last request involving this image. `/uploadLogo` endpoint responses with identifier which can be used for future request to `/generateQR` endpoint with this filename specifed as value of `image` parameter. This workflow is recommended for batch generation of QRs or dynamic generation as it guarantees lowest possible response time and data overhead. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files with maximum size of 1MB are allowed.
+If custom image will be used for batch generation of QRs, this image can be previously uploaded via `/uploadLogo` endpoint. Every uploaded image will be available for 24 hours after last request involving this image. `/uploadLogo` endpoint responses with identifier which can be used for future request to `/generateQR` endpoint with this identifier specifed as `image` parameter. This workflow is recommended for batch generation of QRs or dynamic generation as it guarantees lowest possible response time and data overhead. For upload, `*.svg`, `*.jpeg`, `*.jpg`, `*.png` and `*.gif` files with maximum size of 1MB are allowed.
 
 ![QR Code generation with separately uploaded image](https://raw.githubusercontent.com/kubasaw/QR-docs/master/schemes/upload+generate.svg?sanitize=true)
 
