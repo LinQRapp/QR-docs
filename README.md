@@ -2,8 +2,6 @@
 
 This document describes methods, parameters and usage of Fast QR Code Generator API.
 
-[<img width="215" alt="Connect on RapidAPI" src="https://storage.googleapis.com/code-snippets/connect-on-rapidapi-light.png">](https://rapidapi.com/kubasaw/api/qrcode3)
-
 ## Table of Contents <!-- omit in toc -->
 - [API usage methods](#api-usage-methods)
   - [Simple QR Code generation](#simple-qr-code-generation)
