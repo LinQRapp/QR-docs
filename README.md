@@ -1,3 +1,5 @@
+# Warning! This API version is deprecated and will be active until 30.11.2022. Check new version of API at: [https://linqr.app/docs](https://linqr.app/docs)
+
 # QR Code API  <!-- omit in toc -->
 
 This document describes methods, parameters and usage of Fast QR Code Generator API.
